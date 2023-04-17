@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>TESTPINE 2.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="panel" class="row pl-2  " style="height: 100vh ;">
+        <div style="height: 100vh;" class="col-md-2 h-100 d-inline-block float-start">
+            <div class="img">
+                <img style="width: 75px; height: 75px;"  src="image/aek.jpeg" class="img-thumbnail" alt="png">
+               </div>
+
+               <button  style="width: 95%; height: 15%;background-color:  #A5C9CA;" type="button" class="btn btn-success mt-9  ">ADMİNİSTRATOR</button>
+               <button id="btns" style="width: 98%; height: 8%;" type="button" class="btn btn-success mt-4 ">DASHBOARD</button>
+               <button id="btns" style="width: 98%; height: 8%;" type="button" class="btn btn-success mt-4 ">ABOUT</button>
+               <button id="btns" style="width: 98%; height: 8%;" type="button" class="btn btn-success mt-4 ">CONTACT</button>
+               <button id="resetButton" style="width: 98%; height: 8%;" type="button" class="btn btn-success mt-4 ">RESET</button>
+               <button id="logout" style="width: 98%; height: 8%;" type="button" class="btn btn-danger mt-4 ">LOG OUT</button>
+</div>
+        <div class="col-md-4  d-flex justify-content-center " style="background-color: #E7F6F2;">
+
+            <ul class="w3-bar  pl-0 rounded-top rounded-bottom  justify-content-center mt-5">
+
+                <li class="   py-2 pr-5 pl-5 mt-4"   id="in1" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group  rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>Name:</label>
+            <input type='text' class='form-control  ' id='usr' name='username'>
+        </div>">NAME</li>
+                
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in2" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group  rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>input text:</label>
+            <input type='text' class='form-control  ' id='usr' name='username'>
+        </div>">INPUT TEXT</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in3" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group  rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>Color</label>
+            <input type='color' class='form-control  ' id='usr' name='username'>
+        </div>">COLOR</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in4" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group  rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>BUTTON:</label>
+                <input type='button' class='btn btn-success form-control' value='ok Button' id='usr' name='username'>
+        </div>">OK BUTTON</li>
+                <li class="   py-2 pr-5 pl-5 mt-4"  id="in5" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group  rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>CHECKBOOX:</label>
+            <div class='custom-control custom-checkbox mb-3 pl-4'>
+                <input type='checkbox' class='custom-control-input' id='customCheck' name='example1'>
+                <label class='custom-control-label' for='customCheck'>checkbox</label>
+            </div>
+        </div>">CHECKBOX</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in6" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>ENTER DATE:</label>
+            <input type='date' class='form-control ' id='usr' name='username'>
+        </div>">DATE FIELD</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in7" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>UPLOAD YOUR FILE HERE:</label>
+            <div class='custom-file'>
+                <input type='file' class='custom-file-input' id='customFile'>
+                <label class='custom-file-label' for='customFile'>Choose file</label>
+            </div>
+        </div>">FILE UPLOAD</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in8" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>NUMBER:</label>
+            <input type='number' class='form-control ' id='usr' name='username'>
+        </div>">NUMBER</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in9" draggable="true" ondragstart="drag(event)" data-input="<div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>RADIO:</label><br>
+            <div class='custom-control custom-radio custom-control-inline'>
+                <input type='radio' class='custom-control-input' id='customRadio' name='example' value='customEx'>
+                <label class='custom-control-label' for='customRadio'>Custom radio 1</label>
+            </div>
+            <div class='custom-control custom-radio custom-control-inline'>
+                <input type='radio' class='custom-control-input' id='customRadio2' name='example' value='customEx'>
+                <label class='custom-control-label' for='customRadio2'>Custom radio 2</label>
+            </div>
+        </div>">RADIO</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in10" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>SELECT ONE:</label>
+        <select name='cars' class='custom-select'>
+            <option selected>Select one</option>
+            <option >Lorem.</option>
+            <option >Lorem.</option>
+            <option >Lorem.</option>
+            <option >Lorem.</option>
+        </select>
+        </div>">SELECT</li>
+             
+                <li class="   py-2 pr-5 pl-5 mt-4 "  id="in12" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>ENTER URLS:</label>
+            <input type='url' class='form-control ' id='usr' name='username'>
+        </div>">URL</li>
+                <li class="   py-2 pr-5 pl-5 mt-4 " id="in15" draggable="true" ondragstart="drag(event)" data-input=" <div class='form-group rounded-lg'>
+            <label for='usr' class='text-primary pl-4 pt-1'>SELECT DATE AND TIME:</label>
+            <input type='datetime-local' class='form-control ' id='usr' name='username'>
+        </div>">DATE_TIME LOCAL</li>
+        <li  class="   py-2 pr-5 pl-5 mt-4 " id="in11" draggable="true" ondragstart="drag(event)"
+            data-input=" 
+                        <textarea id='w' name='w' rows='5' cols='90%'>
+         Bu örnek sayfa Eren Kaplan tarafından hazırlandı.
+          </textarea>">TEXTAREA</li>
+              
+            </ul>
+
+
+</div>
+        <div class="col-md-6  " style="background-color: #E7F6F2;">
+            <main class="margin mt-5">
+      
+                
+                        <div class="drop">
+                            <div class=" good  " ondrop="drop(event)" ondragover="allowDrop(event)" id="box1" ondragenter="back()">
+                                <p style="text-align: center;align-items: center;" class="text-white " ondragover="going()" id="hop">Bu alana sürükleyiniz.</p>
+                        </div> 
+                        </div>
+                    </div>
+            </main>   
+        </div>  
+
+
+
+
+        
+    
+
+
+
+
+
+<script>
+        const resetButton = document.getElementById("resetButton");
+    
+    resetButton.addEventListener("click", function() {
+      location.reload(); // sayfayı yeniden yükler.
+    });
+    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
