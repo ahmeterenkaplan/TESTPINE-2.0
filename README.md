@@ -21,4 +21,4 @@ responsive mobil uyumluluk
   
 ## GOLİVE
 
-http://127.0.0.1:5500/index.html
+https://superlative-crepe-90abb6.netlify.app/
